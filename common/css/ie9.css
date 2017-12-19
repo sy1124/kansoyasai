@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+div#box01 div > img { opacity:1.0; }
+
+div#box02 p { opacity:1.0; }
+div#box02 div { opacity:1.0; }
+
+div#box03 ol li h2 img { opacity:1.0; }
+
+div#box04 div#recipes div { opacity:1.0; }
+
+div.recipeBox > img + div ul { width:360px; top:auto; left:auto; }

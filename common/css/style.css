@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/* --------------------------------------------------------------------------------
+html { font-size:62.5%; = 10px }
+body { font-size:1.6rem; = 16px }
+font-family: Arial, Roboto, 'Droid Sans', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+font-family: 'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif;
+-------------------------------------------------------------------------------- */
+
+html { font-size:10px; background:#FFF; }
+body { height:100%; font-size:1.3rem; font-family:Arial, Roboto, 'Droid Sans', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif; letter-spacing:0; color:#000; min-width:1230px; background:#6F2D09 url(../images/bg.jpg) repeat-y 50% 0; position:relative; }
+br { letter-spacing:normal; }
+img { vertical-align:bottom; }
+div.hidden { overflow-x:hidden; }
+a { color:#000; }
+a:hover { text-decoration:none; }
+
+
+/* WRAP */
+#wrap { margin:0 auto; width:1070px; position:relative; }
+
+/* BOX00 */
+div#box00 { clear:both; margin:0 -315px; padding:50px 315px; width:1070px; height:580px; position:relative; overflow:hidden; }
+div#box00 {
+background-image:url(../../box00/image01.png), url(../../box00/image02.png), url(../../box00/image03.png), url(../../box00/main.jpg);
+background-position:450px 100px, 250px 270px, 400px bottom, 50% 50%;
+background-repeat:no-repeat;
+}
+div#box00 > h1 { margin:30px auto 0 -85px; padding:0; text-align:center; }
+div#box00 > h1.fadeIn {
+-webkit-animation-duration: 3s;
+animation-duration: 3s;
+}
+div#box00 p { position:absolute; top:45px; right:590px; }
+div#box00 p.fadeIn {
+-webkit-animation-delay: 1.5s;
+animation-delay: 1.5s;
+}
+div#box00 div.logo { position:absolute; top:20px; left:265px; }
+/* BOX00 */
+
+/* NAV */
+ul#nav { margin:0 -315px; padding:0 315px; list-style:none; font-size:0.0rem; text-align:center; width:1070px; height:51px; background:url(../images/bg.jpg) no-repeat 50% 50%; overflow:hidden; }
+ul.fixed { position:fixed; top:0; z-index:100; }
+ul#nav li { display:inline-block; margin:0 40px 0 0; padding:0; font-size:1.4rem; font-family:'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif; line-height:1.25; text-align:center; }
+ul#nav > li:last-of-type { margin-right:0; }
+ul#nav li a { display:block; padding:17px 0; text-decoration:none; color:#FFF; } ul#nav li a.current, ul#nav li a:hover { padding-bottom:7px; color:#C7B299; border-bottom:10px solid #C7B299; }
+/* NAV */
+
+/* BOX01 */
+div#box01 { clear:both; margin:0 -315px; padding:65px 315px 400px; width:1070px; position:relative; overflow:hidden; background:#FFF; }
+ul.fixed + section div#box01 { margin-top:51px; }
+div#box01 {
+background-image:url(../../box01/image01.png), url(../../box01/image02.png), url(../../box01/photo.jpg);
+background-position:215px 450px, 1200px 270px, 50% bottom;
+background-repeat:no-repeat;
+}
+div#box01 > h1 { margin:0 auto 50px; padding:0; text-align:center; }
+div#box01 div { padding-bottom:60px; position:relative; }
+div#box01 div > img { opacity:0; position:absolute; top:-80px; left:-80px; }
+div#box01 div + div > img { top:auto; left:auto; bottom:-90px; right:-40px; }
+div#box01 div h2 { margin:0 auto 20px; padding:0; font-size:3.0rem; font-family:'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif; line-height:1.25; text-align:center; }
+div#box01 div p { margin:0 auto; padding:0; font-size:1.6rem; line-height:1.75; text-align:justify; text-justify:auto; width:610px; }
+/* BOX01 */
+
+/* BOX02 */
+div#box02 { clear:both; margin:0 -315px; padding:65px 315px 400px; width:1070px; position:relative; overflow:hidden; background:url(../../box02/photo.jpg) no-repeat 50% bottom; }
+div#box02 > h1 { margin:0 -315px 50px; padding:0; text-align:center; }
+div#box02 h2 { margin:0 auto 40px; padding:0; font-size:3.0rem; font-family:'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif; line-height:1.25; text-align:center; color:#FFF; }
+div#box02 h2 span { font-size:1.8rem; }
+div#box02 p { opacity:0; margin:0 auto 20px; padding:0; font-size:1.6rem; line-height:1.5; text-align:justify; text-justify:auto; color:#FFF; width:820px; overflow:hidden; }
+div#box02 p img { width:auto; float:right; padding-left:20px; }
+div#box02 div { opacity:0; margin:0; padding:0; width:380px; position:absolute; bottom:460px; left:465px; }
+div#box02 div > img + img { position:absolute; right:0; top:10px; }
+div#box02 div dl { margin:0; padding:0; width:auto; overflow:hidden; }
+div#box02 div dl dt { margin:0; padding:0; width:100px; float:left; }
+div#box02 div dl dd { margin:0 0 0 100px; padding:0; font-size:1.4rem; line-height:1.5; color:#FFF; }
+div#box02 div dl dd a { display:inline-block; margin:5px 0 0; padding:0 10px; font-size:1.4rem; font-weight:bold; line-height:24px; text-decoration:none; color:#FFF; width:auto; border:3px solid #FFF; border-radius:15px; }
+div#box02 div dl dd a:hover { color:#42210B; background:#FFF; }
+/* BOX02 */
+
+/* BOX03 */
+div#box03 { clear:both; margin:0 -315px; padding:65px 280px; width:1140px; position:relative; overflow:hidden; background:#FFF; }
+div#box03 > h1 { margin:0 auto 50px; padding:0; text-align:center; }
+div#box03 ol { margin:0; padding:0; width:auto; overflow:hidden; list-style:none; }
+div#box03 ol li { margin:0; padding:0; width:380px; height:320px; float:left; position:relative; }
+div#box03 ol li h2, div#box03 ol li > img { margin:0; padding:0; position:absolute; }
+div#box03 ol li h2 img { opacity:0; }
+div#box03 ol > li:first-of-type h2 { top:0; right:90px;}
+div#box03 ol > li:first-of-type >img { bottom:30px; left:0;}
+div#box03 ol > li:nth-of-type(2) h2 { bottom:0; right:20px; }
+div#box03 ol > li:nth-of-type(2) > img { top:60px; left:40px; }
+div#box03 ol > li:nth-of-type(3) h2 { top:0; right:0; }
+div#box03 ol > li:nth-of-type(3) > img { top:20px; left:90px; }
+div#box03 ol > li:nth-of-type(4) h2 { bottom:20px; left:0; }
+div#box03 ol > li:nth-of-type(4) > img { bottom:40px; left:60px; }
+div#box03 ol > li:nth-of-type(5) h2 { bottom:0; left:30px; }
+div#box03 ol > li:nth-of-type(5) > img { bottom:0; right:30px; }
+div#box03 ol > li:last-of-type h2 { top:10px; right:10px; }
+div#box03 ol > li:last-of-type > img { top:50px; left:60px; }
+/* BOX03 */
+
+/* BOX04 */
+div#box04 { clear:both; margin:0 -315px; padding:65px 315px 25px; width:1070px; position:relative; overflow:hidden; }
+div#box04 {
+background-image:url(../../box04/image02.png), url(../../box04/image01.png), url(../../box04/image02.png), url(../../box04/image01.png);
+background-position:right top, left 750px, right 1300px, left bottom;
+background-repeat:no-repeat;
+}
+div#box04 > h1 { margin:0 auto 50px; padding:0; text-align:center; }
+
+div#box04 div#recipes div { opacity:0; margin:0 25px 25px 0; padding:20px; width:300px; height:310px; float:left; background:url(../../box04/bgA.jpg) no-repeat 0 0; position:relative; }
+div#box04 div#recipes > article:nth-of-type(2n) div { background-image:url(../../box04/bgB.jpg); }
+div#box04 div#recipes > article:nth-of-type(3n) div { margin-right:0; }
+div#box04 div#recipes > article:nth-of-type(3n+1) div { clear:both; }
+div#box04 div#recipes div h1 { margin:0 -15px 10px; padding:0; font-size:2.2rem; line-height:1.25; text-align:center; color:#FFF; }
+div#box04 div#recipes div h1 span { font-size:1.4rem; font-weight:normal; }
+div#box04 div#recipes div p { clear:both; margin:0 auto; padding:0; text-align:center; }
+div#box04 div#recipes div p a { display:inline-block; padding:0 20px; font-size:1.4rem; font-weight:bold; letter-spacing:2px; line-height:28px; text-decoration:none; color:#FFF; border:3px solid #FFF; border-radius:2px; }
+div#box04 div#recipes div p a:hover { background:#42210B; }
+div#box04 div#recipes div ul { margin:0; padding:0; font-size:0.0rem; position:absolute; top:40px; left:20px; }
+div#box04 div#recipes div ul li { display:inline-block; margin:0; padding:0; font-size:1.0rem; list-style:none; }
+div#box04 div#recipes div ul li:not(:first-of-type) { margin-left:-5px; }
+div#box04 div#recipes div ul li:first-of-type { border-left:5px solid #FF931E; }
+div#box04 div#recipes div ul li:first-of-type img { margin-left:-5px; }
+
+div#box04 div#recipes div.recipeBox { display:none; }
+div.recipeBox { padding:40px; width:auto; height:auto; background:#FFF; overflow:auto; position:relative; }
+div.recipeBox > div:first-of-type { font-size:2.0rem; line-height:36px; color:#FFF; width:150px; height:36px; text-align:center; background:#DA4225; position:absolute; top:0; left:0; }
+
+div.recipeBox > h1 { margin:0 auto 40px; padding:0; font-size:2.8rem; font-family:'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif; line-height:1.25; text-align:center; color:#42210B; }
+div.recipeBox > h1 span { font-size:1.6rem; font-weight:normal; }
+div.recipeBox > img { width:auto; float:left; }
+
+div.recipeBox > img + div { padding:15px 35px 25px 15px; width:520px; float:right; background:#F5F1DF; position:relative; }
+div.recipeBox > img + div h2 { margin:-30px 0 15px -30px; padding:20px 0 0 150px; font-size:2.0rem; font-weight:bold; line-height:35px; text-align:center; color:#42210B; width:auto; height:25px; background:url(../../box04/ttl_item.png) no-repeat 0 50%; }
+div.recipeBox > img + div dl { margin:0; padding:0; width:520px; overflow:hidden; }
+div.recipeBox > img + div dl dt { text-align:center; width:160px; float:left; }
+div.recipeBox > img + div dl dt img { width:auto; height:140px; }
+div.recipeBox > img + div dl dd { margin:0 0 0 160px; padding:0; font-size:1.4rem; font-family:'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif; line-height:1.5; text-align:justify; text-justify:auto; }
+div.recipeBox > img + div ul { margin:0; padding:0; position:absolute; right:35px; bottom:20px; }
+div.recipeBox > img + div ul li { margin:10px 0 0; padding:0 5px 0 10px; font-size:1.4rem; line-height:30px; color:#FFF; width:345px; height:30px; border-radius:6px; background:rgba(193,39,45,0.6); list-style:none; }
+div.recipeBox > img + div ul li strong { font-size:1.8rem; }
+div.recipeBox > img + div ul li a { display:inline-block; margin:3px 0; padding:0 10px; font-size:1.2rem; font-weight:bold; line-height:20px; text-decoration:none; color:#FFF; width:auto; float:right; border:2px solid #FFF; border-radius:9px; }
+div.recipeBox > img + div ul li a:hover { color:rgba(193,39,45,0.6); background:#FFF; }
+
+div.recipeBox > img + div + div { padding:30px 0; clear:both; width:300px; float:left; }
+div.recipeBox > img + div + div h2 { margin:0 0 10px; padding:0 0 5px 5px; font-size:2.4rem; font-family:'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif; line-height:1.25; color:#DA4225; border-bottom:1px solid #DA4225; }
+div.recipeBox > img + div + div h2 span { font-size:1.8rem; }
+div.recipeBox > img + div + div table { margin:0; padding:0; font-size:1.4rem; line-height:1.25; width:300px; border-collapse:collapse; border-spacing:0; }
+div.recipeBox > img + div + div table th { padding:4px 10px; font-weight:normal; text-align:left; border-bottom:2px solid #FFF; background:#EEE; }
+div.recipeBox > img + div + div table td { padding:4px 0 4px 10px; border-bottom:2px solid #FFF; }
+
+div.recipeBox > div:last-of-type { padding:30px 0 15px; width:570px; float:right; }
+div.recipeBox > div:last-of-type h2 { margin:0 0 10px; padding:0 0 5px 5px; font-size:2.4rem; font-family:'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif; line-height:1.25; color:#DA4225; border-bottom:1px solid #DA4225; }
+div.recipeBox > div:last-of-type ol { margin:0; padding:0 0 0 5px; }
+div.recipeBox > div:last-of-type ol li { margin:0 0 15px; padding:0 0 0 40px; font-size:1.6rem; line-height:1.25; text-align:justify; text-justify:justify; color:#42210B; min-height:30px; background:no-repeat 0 0; list-style:none; }
+div.recipeBox > div:last-of-type ol > li:nth-of-type(1) { background-image:url(../../box04/no01.png); }
+div.recipeBox > div:last-of-type ol > li:nth-of-type(2) { background-image:url(../../box04/no02.png); }
+div.recipeBox > div:last-of-type ol > li:nth-of-type(3) { background-image:url(../../box04/no03.png); }
+div.recipeBox > div:last-of-type ol > li:nth-of-type(4) { background-image:url(../../box04/no04.png); }
+div.recipeBox > div:last-of-type ol > li:nth-of-type(5) { background-image:url(../../box04/no05.png); }
+div.recipeBox > div:last-of-type ol + p { margin:0 0 15px; padding:10px 0 0; font-size:1.4rem; line-height:1.25; text-align:center; color:#DA4225; }
+
+div.recipeBox > p { clear:both; margin:0 auto; padding:0; font-size:0; text-align:center; }
+div.recipeBox > p a { display:inline-block; margin:0 15px 0 0; padding:0 10px 0 55px; font-size:1.4rem; font-weight:bold; line-height:50px; text-align:center; text-decoration:none; color:#FFF; width:170px; border:none; border-radius:3px; background:#42210B url(../images/sns_f.png) no-repeat 10px 50%; }
+div.recipeBox > p a:hover { background-color:#754C24; }
+div.recipeBox > p > a:first-of-type + a { background-image:url(../images/sns_t.png); }
+div.recipeBox > p > a:last-of-type { margin-right:0; background-image:url(../images/btn_pdf.png); }
+/* BOX04 */
+
+/* BOX05 */
+div#box05 { clear:both; margin:0 -315px; padding:65px 315px 0; width:1070px; position:relative; overflow:hidden; }
+div#box05 > h1 { margin:0 auto 30px; padding:0; text-align:center; }
+div#box05 div { margin:0 -315px; padding:0 315px; width:1070px; height:560px; background:no-repeat 50% 50%; }
+div#box05 > article:not(:first-of-type) div { box-shadow:0px 15px 5px -5px rgba(0,0,0,0.2) inset; }
+div#box05 div#box051 { background-image:url(../../box05/photo01.jpg); }
+div#box05 div#box052 { padding-left:885px; width:500px; background-image:url(../../box05/photo02.jpg); }
+div#box05 div#box053 { background-image:url(../../box05/photo03.jpg); }
+div#box05 div#box054 { padding-left:885px; width:500px; background-image:url(../../box05/photo04.jpg); }
+div#box05 div#box055 { background-image:url(../../box05/photo05.jpg); }
+div#box05 div#box056 { padding-left:885px; width:500px; background-image:url(../../box05/photo06.jpg); }
+div#box05 div#box057 { background-image:url(../../box05/photo07.jpg); }
+div#box05 div.narrow { height:120px; overflow:hidden; }
+div#box05 div#box052 h1, div#box05 div#box054 h1 { margin-left:-620px; padding-left:620px; }
+div#box05 div h1, div#box05 div h1 + p { margin:0; padding:0; font-family:'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif; line-height:40px; color:#FFF; }
+div#box05 div h1 { margin:0; padding:40px 0; font-size:3.6rem; }
+div#box05 div.narrow h1 { cursor:pointer; }
+div#box05 div.narrow h1:hover { text-shadow:0px 5px 5px rgba(0,0,0,0.5); }
+div#box05 div h1 span { font-size:2.0rem; }
+div#box05 div h1 a { color:#FFF; text-decoration:none; }
+div#box05 div h1 + p { margin:0; padding:0; font-size:1.6rem; line-height:1.5; text-align:justify; text-justify:auto; color:#FFF; width:500px; }
+
+div#box05 div ul { margin:0; padding:30px 20px 0 0; width:500px; float:left; }
+div#box05 div ul li { margin:0 0 15px; padding:0 15px; font-size:1.6rem; line-height:50px; color:#FFF; width:470px; height:50px; border-radius:6px; background:rgba(193,39,45,0.6); list-style:none; }
+div#box05 div ul li strong { font-size:2.8rem; }
+div#box05 div ul li a { display:inline-block; margin:10px 0; padding:0 10px; font-size:1.4rem; font-weight:bold; line-height:24px; text-decoration:none; color:#FFF; width:auto; float:right; border:3px solid #FFF; border-radius:15px; }
+div#box05 div ul li a:hover { color:rgba(193,39,45,0.6); background:#FFF; }
+
+div#box05 div ul > li:last-of-type { margin:0; padding:0; width:500px; border-radius:0; background:none; overflow:hidden; }
+div#box05 div ul > li:last-of-type a { margin:0 10px 0 0; padding:0 10px 0 55px; text-align:center; line-height:50px; width:180px; float:left; border:none; border-radius:3px; background:#42210B url(../images/sns_f.png) no-repeat 10px 50%; }
+div#box05 div ul > li:last-of-type a:hover { color:#FFF; background-color:#754C24; }
+div#box05 div ul > li:last-of-type a + a { margin-right:0; background-image:url(../images/sns_t.png); }
+/* BOX05 */
+
+/* BOX06 */
+div#box06 { clear:both; margin:0 -150px; padding:65px 150px; width:1070px; position:relative; overflow:hidden; }
+div#box06 {
+background-image:url(../../box06/image01.png), url(../../box06/image02.png);
+background-position:left bottom, right top;
+background-repeat:no-repeat;
+}
+div#box06 > h1 { margin:0 auto 40px; padding:0; text-align:center; }
+div#box06 div.block { margin:0 115px 50px 65px; padding-left:65px; width:840px; overflow:hidden; }
+div#box06 div.block div { margin-right:-15px; width:225px; float:left; }
+div#box06 div.block article:nth-child(n+5) div{ margin-top:20px; }
+div#box06 div.block article:nth-child(5) div{ margin-left:90px;}
+div#box06 div.block article:nth-child(6) div img{}
+div#box06 div.block article:nth-child(6) div h1{ width:200px;}
+div#box06 div.block article:nth-child(7) div{ margin-right:90px;}
+div#box06 div.block div h1, div#box06 div.block div p { padding:0 50px 0 0; font-family:'Times New Roman', '游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif; line-height:1.25; text-align:center; color:#FFF; }
+div#box06 div.block div h1 { margin:-60px auto 5px; font-size:2.8rem; }
+div#box06 div.block div p { margin:0 -12px; font-size:1.6rem; }
+div#box06 div.block + p { clear:both; margin:0 auto; padding:0; text-align:center; }
+div#box06 div.block + p a { display:inline-block; padding:0 35px; font-size:2.2rem; font-weight:bold; letter-spacing:2px; line-height:60px; text-decoration:none; color:#603813; border-radius:6px; background:#FFF; }
+div#box06 div.block + p a:hover { color:#FFF; background:rgba(96,56,19,0.8); }
+div#box06 div.logo { position:absolute; top:50px; left:100px; }
+/* BOX06 */
+
+/* FOOTER */
+#footer { clear:both; margin:0 -500%; padding:10px 500%; width:1070px; background: rgba(70,40,40,0.80); overflow:hidden; }
+#footer p { margin:0 auto; padding:0; font-size:1.4rem; line-height:30px; color:#FFF; width:auto; float:left; }
+#footer p a { text-decoration:none; color:#FFF; } #footer p a:hover { text-decoration:underline; }
+#footer p + p { float:right; font-size:1.2rem; text-align:right; }
+/* FOOTER */
